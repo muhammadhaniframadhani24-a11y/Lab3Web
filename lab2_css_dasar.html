@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 3 - CSS Dasar</title>
+
+    <!-- CSS Internal -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f3f7fb;
+            color: #243447;
+        }
+
+        header {
+            min-height: 80px;
+            border-bottom: 3px solid #77CCEF;
+            background-color: #ffffff;
+            padding: 18px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            color: #0F189F;
+            text-align: center;
+            margin: 12px 0;
+        }
+
+        header h1 i {
+            color: #6d6a6b;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 24px auto;
+            padding: 0 18px;
+        }
+
+        nav {
+            background: #20A759;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 4px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #0B6B3A;
+        }
+
+        #intro {
+            background: #418fb1;
+            border: 1px solid #099249;
+            border-radius: 8px;
+            padding: 22px;
+            color: #ffffff;
+            box-shadow: 0 5px 14px rgba(0, 0, 0, 0.10);
+        }
+
+        #intro h1 {
+            text-align: left;
+            border: 0;
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        #intro p {
+            line-height: 1.7;
+        }
+
+        .button {
+            padding: 12px 18px;
+            background: #bebcbd;
+            color: #ffffff;
+            display: inline-block;
+            margin: 10px 8px 0 0;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background: #E42A42;
+        }
+
+        .button:hover {
+            filter: brightness(0.92);
+        }
+
+        .catatan {
+            margin-top: 20px;
+            background: #ffffff;
+            border-left: 5px solid #20A759;
+            padding: 16px 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            color: #5d6b78;
+            padding: 18px;
+            font-size: 14px;
+        }
+    </style>
+
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="style_eksternal.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>CSS Internal dan <i>Inline CSS</i></h1>
+    </header>
+
+    <nav>
+        <a class="active" href="lab2_css_dasar.html">CSS Dasar</a>
+        <a href="lab2_css_eksternal.html">CSS Eksternal</a>
+        <a href="#intro">Tentang Praktikum</a>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h1>Hello World</h1>
+            <p style="text-align: center; color: #eaf6ff;">
+                Kami sedang belajar HTML dan CSS dasar pada mata kuliah
+                <b>Pemrograman Web</b>. Praktikum ini membahas cara mengatur
+                tampilan halaman menggunakan CSS internal, eksternal, dan inline.
+            </p>
+            <a class="button btn-primary" href="#catatan">Informasi selengkapnya</a>
+        </section>
+
+        <section id="catatan" class="catatan">
+            <h2>Identitas Praktikan</h2>
+            <p><strong>Nama:</strong> Muhammad Hanif Ramadhani</p>
+            <p><strong>NIM:</strong> 312510291</p>
+            <p>Halaman ini dibuat untuk memenuhi laporan Praktikum 3 CSS Dasar.</p>
+        </section>
+    </main>
+
+    <footer>
+        Praktikum Pemrograman Web — CSS Dasar
+    </footer>
+</body>
+</html>
